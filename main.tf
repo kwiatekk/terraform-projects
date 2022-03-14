@@ -153,7 +153,7 @@ resource "aws_instance" "web_server_instance_1"{
               sudo apt update -y
               sudo apt install apache2 -y
               sudo systemctl start apache2
-              sudo bash -c 'echo my 1st web server deployed in us-east-1a by terraform > /var/www/html/index.html'
+              sudo bash -c 'echo <h1>this is my 1st web server deployed in us-east-1a by terraform</h2> > /var/www/html/index.html'
               EOF
 
   tags = {
@@ -181,7 +181,7 @@ resource "aws_instance" "web_server_instance_2"{
               sudo apt update -y
               sudo apt install apache2 -y
               sudo systemctl start apache2
-              sudo bash -c 'echo my 2st web server deployed in us-east-1b by terraform > /var/www/html/index.html'
+              sudo bash -c 'echo <h1>this is my 2nd web server deployed in us-east-1b by terraform</h1> > /var/www/html/index.html'
               EOF
 
   tags = {
